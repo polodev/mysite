@@ -4,21 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel='stylesheet' href='static/css/bootstrap.min.css'/>
+  <title>Polo Dev</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel='stylesheet' href='{{.Site.BaseURL}}css/bootstrap.min.css'/>
+  <!-- syntax highlight -->
+  <link rel='stylesheet' href='{{.Site.BaseURL}}css/syntax.css'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css'/>
+
+
   {{ $sass := resources.Get "scss/style.scss" }}
   {{ $style := $sass | resources.ToCSS (dict "outputStyle" "compressed" "enableSourceMap" true) }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
+
 </head>
 <body>
+  {{ partial "menu.html" . }}
 
-	{{ block "main" . }}
-		
-	{{ end }}
+<div class='container'>
+  {{ block "main" . }}
+    
+  {{ end }}
+</div>
+<!-- /.container -->
   
-  <script src='static/js/jquery.min.js'></script>
-  <script src='static/js/popper.min.js'></script>
-  <script src="static/js/bootstrap.min.js"></script>
+  <script src='{{.Site.BaseURL}}/js/jquery.min.js'></script>
+  <script src='{{.Site.BaseURL}}/js/popper.min.js'></script>
+  <script src="{{.Site.BaseURL}}/js/bootstrap.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+<script>
+hljs.initHighlightingOnLoad();
+
+var pre = document.getElementsByTagName('pre');
+for (var i = 0; i < pre.length; i++) {
+    var isLanguage = pre[i].children[0].className.indexOf('language-');
+    if ( isLanguage === 0 ) {
+            var button           = document.createElement('button');
+                    button.className = 'copy-button';
+                    button.textContent = 'Copy';
+ 
+                    pre[i].appendChild(button);
+        }
+}
+var copyCode = new ClipboardJS('.copy-button', {
+    target: function(trigger) {
+        return trigger.previousElementSibling;
+    }
+});
+copyCode.on('success', function(event) {
+    event.clearSelection();
+    event.trigger.textContent = 'Copied';
+    window.setTimeout(function() {
+        event.trigger.textContent = 'Copy';
+    }, 2000);
+});
+copyCode.on('error', function(event) { 
+    event.trigger.textContent = 'Press "Ctrl + C" to copy';
+    window.setTimeout(function() {
+        event.trigger.textContent = 'Copy';
+    }, 2000);
+});
+
+
+
+// $content = "<div class='code_copy'>code copy</div>"
+
+</script>
+
 </body>
 </html>

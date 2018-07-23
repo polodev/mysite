@@ -1,5 +1,21 @@
-@import 'partials/test.scss';
-body {
-	background-color: #eee;
-	color: #333;
+// @import 'partials/test.scss';
+// body {
+// 	background-color: #eee;
+// 	color: #333;
+// }
+pre {
+	position: relative;
+}
+.copy-button {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: inline-block;
+	color: maroon;
+	border: 1px solid maroon;
+	cursor: pointer;
+	&:hover {
+		background-color: maroon;
+		color: white;
+	}
 }

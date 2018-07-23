@@ -1,3 +1,80 @@
 {{ define "main" }}
-	<h2>Hello world from static site</h2>
+
+
+<h2 class="my-3">
+	<a href='#'>
+		Posts
+	</a>
+</h2>
+<hr/>
+
+<div class='row'>
+	{{ range $i:=  (seq 5) }}
+		<div class='col-md-4 my-2'>
+			<div class='card bg-info text-center'>
+				<div class='card-header'>
+					<h2>
+						<a href='#' class="text-white d-block p-5">
+							how to do crud with php pdo
+						</a>
+					</h2>
+				</div>
+				<!-- /.card-header -->
+			</div>
+		<!-- /.card -->
+		</div>
+		<!-- /.col-md-4 -->
+
+	{{ end }}
+</div>
+<!-- /.row -->
+
+
+
+<h2 class="my-3"> <a href='#'>libraries</a> </h2>
+<hr/>
+
+<div class='row'>
+	{{ range $i:=  (seq 5) }}
+		<div class='col-md-4 my-2'>
+			<div class='card bg-info text-center'>
+				<div class='card-header'>
+					<h2>
+						<a href='#' class="text-white d-block p-5">php</a>
+					</h2>
+				</div>
+				<!-- /.card-header -->
+			</div>
+		<!-- /.card -->
+		</div>
+		<!-- /.col-md-4 -->
+
+	{{ end }}
+</div>
+<!-- /.row -->
+
+
+<h2 class="my-3"> <a href='#'>series</a> </h2>
+<hr/>
+
+<div class='row'>
+	{{ range $i:=  (seq 5) }}
+		<div class='col-md-4 my-2'>
+			<div class='card bg-info text-center'>
+				<div class='card-header'>
+					<h2>
+						<a href='#' class="text-white d-block p-5">
+							How to do set up ubuntu for for beginner from scratch
+						</a>
+					</h2>
+				</div>
+				<!-- /.card-header -->
+			</div>
+		<!-- /.card -->
+		</div>
+		<!-- /.col-md-4 -->
+
+	{{ end }}
+</div>
+<!-- /.row -->
 {{ end }}
