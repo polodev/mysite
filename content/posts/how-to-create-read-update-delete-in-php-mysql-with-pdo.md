@@ -28,7 +28,8 @@ Don't be scare about the basic command line. Lot of people scare about command l
 ## tuts
 ### Mysql part
 first login to mysql and create database and table. to create database and table following code will be necessary. `sql` is not case sensitive. We can use sql syntax uppercase and lower case vice versa.
-{{< highlight sql "linenos=table" >}}
+~~~
+{{< highlight sql >}}
 CREATE DATABASE company;
 USE company;
 CREATE TABLE people (
@@ -37,16 +38,20 @@ CREATE TABLE people (
   email VARCHAR(30) NOT NULL
 );
 {{</ highlight >}}
+~~~
 ### Database connection
 In `db.php` connect with database by instantiating `PDO`. 
-{{< highlight php "linenos=table" >}}
-<?php
+
+~~~
+{{< highlight php >}}
+<?php 
 $dsn = 'mysql:host=localhost;dbname=company';
 $username = 'root';
 $password = '';
 $options = [];
 $connection = new PDO($dsn, $username, $password, $options);
 {{</ highlight >}}
+~~~
 here dsn means data source name. which contain sql driver, database name and host information.
 
 ### create
