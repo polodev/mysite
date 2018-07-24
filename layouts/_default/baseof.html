@@ -9,7 +9,7 @@
   <link rel='stylesheet' href='{{.Site.BaseURL}}css/bootstrap.min.css'/>
   <!-- syntax highlight -->
   <link rel='stylesheet' href='{{.Site.BaseURL}}css/syntax.css'/>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css'/>
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css'/> -->
 
 
   {{ $sass := resources.Get "scss/style.scss" }}
@@ -31,23 +31,48 @@
   <script src='{{.Site.BaseURL}}/js/jquery.min.js'></script>
   <script src='{{.Site.BaseURL}}/js/popper.min.js'></script>
   <script src="{{.Site.BaseURL}}/js/bootstrap.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script>
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js'></script> -->
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 
-<script>
-hljs.initHighlightingOnLoad();
 
-var pre = document.getElementsByTagName('pre');
-for (var i = 0; i < pre.length; i++) {
-    var isLanguage = pre[i].children[0].className.indexOf('language-');
-    if ( isLanguage === 0 ) {
-            var button           = document.createElement('button');
-                    button.className = 'copy-button';
-                    button.textContent = 'Copy';
+<script>
+// hljs.initHighlightingOnLoad();
+// hljs.initLineNumbersOnLoad();
+
+// first select table 
+var tables = document.querySelectorAll('table.lntable');
+// console.log(tables);
+tables.forEach(function (table) {
+  var tds = table.querySelectorAll('td');
+  if (tds.length > 1) {
+    var codeTd = tds[1];
+    var pre = codeTd.querySelector('pre');
+    var button = document.createElement('button');
+    button.className = 'copy-button';
+    button.textContent = 'Copy';
+    pre.appendChild(button);
+  }
+
+})
+
+// iterate all table 
+  //  select pre inside 2nd td 
+  //  adding copy button in pre class 
+  //  
+
+
+// var pre = document.querySelector('.lntd pre');
+// for (var i = 0; i < pre.length; i++) {
+//     var isLanguage = pre[i].children[0].className.indexOf('language-');
+//     if ( isLanguage === 0 ) {
+//             var button           = document.createElement('button');
+//                     button.className = 'copy-button';
+//                     button.textContent = 'Copy';
  
-                    pre[i].appendChild(button);
-        }
-}
+//                     pre[i].appendChild(button);
+//         }
+// }
 var copyCode = new ClipboardJS('.copy-button', {
     target: function(trigger) {
         return trigger.previousElementSibling;

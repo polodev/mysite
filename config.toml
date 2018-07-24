@@ -1,7 +1,7 @@
 baseURL = "http://github.com/"
 languageCode = "en-us"
 title = "My New Hugo Site"
-pygmentsUseClasses=false
+pygmentsUseClasses=true
 
 [permalinks]
   post = ":title/"
