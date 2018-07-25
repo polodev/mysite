@@ -1,1 +1,127 @@
-you are using layout/library/php.html template
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Polo Dev</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://polodev.github.io/mysite/css/bootstrap.min.css'/>
+  
+  <link rel='stylesheet' href='https://polodev.github.io/mysite/css/syntax.css'/>
+
+
+  
+  
+  <link rel="stylesheet" href="https://polodev.github.io/mysite/scss/style.css" />
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://polodev.github.io/mysite/">Polo Dev</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://polodev.github.io/mysite/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://polodev.github.io/mysite/posts">Posts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://polodev.github.io/mysite/libraries">Library</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/mysite/series">Series</a>
+      </li>
+    </ul>
+    <div class="m-2">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </div>
+  </div>
+</nav>
+
+<div class='container'>
+  
+<h1>this is default single page</h1>
+	<p>Variables are &ldquo;containers&rdquo; for storing information.</p>
+
+<p>Creating (Declaring) PHP Variables<br />
+In PHP, a variable starts with the <code>$</code> sign, followed by the name of the variable:</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="nv">$txt</span> <span class="o">=</span> <span class="s2">&#34;Hello world!&#34;</span><span class="p">;</span>
+<span class="nv">$x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="nv">$y</span> <span class="o">=</span> <span class="mf">10.5</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+
+</div>
+
+  
+  <script src='https://polodev.github.io/mysite//js/jquery.min.js'></script>
+  <script src='https://polodev.github.io/mysite//js/popper.min.js'></script>
+  <script src="https://polodev.github.io/mysite//js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+
+<script>
+
+var tables = document.querySelectorAll('table.lntable');
+tables.forEach(function (table) {
+  var tds = table.querySelectorAll('td');
+  if (tds.length > 1) {
+    var codeTd = tds[1];
+    var pre = codeTd.querySelector('pre');
+    var button = document.createElement('button');
+    button.className = 'copy-button';
+    button.textContent = 'Copy';
+    pre.appendChild(button);
+  }
+
+})
+
+var copyCode = new ClipboardJS('.copy-button', {
+    target: function(trigger) {
+        return trigger.previousElementSibling;
+    }
+});
+copyCode.on('success', function(event) {
+    event.clearSelection();
+    event.trigger.textContent = 'Copied';
+    window.setTimeout(function() {
+        event.trigger.textContent = 'Copy';
+    }, 2000);
+});
+copyCode.on('error', function(event) { 
+    event.trigger.textContent = 'Press "Ctrl + C" to copy';
+    window.setTimeout(function() {
+        event.trigger.textContent = 'Copy';
+    }, 2000);
+});
+
+
+
+
+
+</script>
+
+</body>
+</html>
