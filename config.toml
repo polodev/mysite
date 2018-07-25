@@ -1,4 +1,4 @@
-baseURL = "http://github.com/"
+baseURL = "https://polodev.github.io/mysite/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 pygmentsUseClasses=true

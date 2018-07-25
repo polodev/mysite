@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>php essential on My New Hugo Site</title>
-    <link>http://github.com/libraries/php/</link>
+    <link>https://polodev.github.io/mysite/libraries/php/</link>
     <description>Recent content in php essential on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 24 Jul 2018 00:29:26 +0600</lastBuildDate>
     
-	<atom:link href="http://github.com/libraries/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://polodev.github.io/mysite/libraries/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Php Echo</title>
-      <link>http://github.com/libraries/php/php-echo/</link>
+      <link>https://polodev.github.io/mysite/libraries/php/php-echo/</link>
       <pubDate>Thu, 26 Jul 2018 00:04:47 +0600</pubDate>
       
-      <guid>http://github.com/libraries/php/php-echo/</guid>
+      <guid>https://polodev.github.io/mysite/libraries/php/php-echo/</guid>
       <description>In PHP there are two basic ways to get output: echo and print.
 In this tutorial we use echo (and print) in almost every example. So, this chapter contains a little more info about those two output statements.
 PHP echo and print Statements echo and print are more or less the same. They are both used to output data to the screen.
@@ -25,10 +25,10 @@ The differences are small: echo has no return value while print has a return val
     
     <item>
       <title>Php Variable</title>
-      <link>http://github.com/libraries/php/php-variable/</link>
+      <link>https://polodev.github.io/mysite/libraries/php/php-variable/</link>
       <pubDate>Thu, 26 Jul 2018 00:04:42 +0600</pubDate>
       
-      <guid>http://github.com/libraries/php/php-variable/</guid>
+      <guid>https://polodev.github.io/mysite/libraries/php/php-variable/</guid>
       <description>Variables are &amp;ldquo;containers&amp;rdquo; for storing information.
 Creating (Declaring) PHP Variables
 In PHP, a variable starts with the $ sign, followed by the name of the variable:
@@ -37,20 +37,20 @@ In PHP, a variable starts with the $ sign, followed by the name of the variable:
     
     <item>
       <title>Php Intro</title>
-      <link>http://github.com/libraries/php/php-intro/</link>
+      <link>https://polodev.github.io/mysite/libraries/php/php-intro/</link>
       <pubDate>Thu, 26 Jul 2018 00:04:11 +0600</pubDate>
       
-      <guid>http://github.com/libraries/php/php-intro/</guid>
+      <guid>https://polodev.github.io/mysite/libraries/php/php-intro/</guid>
       <description> What is php PHP is an acronym for &amp;ldquo;PHP: Hypertext Preprocessor&amp;rdquo;. PHP is a widely-used, open source scripting language. Its a powerful tool for making dynamic and interactive Web pages.
 What Can PHP Do?  PHP can generate dynamic page content PHP can create, open, read, write, delete, and close files on the server PHP can collect form data PHP can send and receive cookies PHP can add, delete, modify data in your database PHP can be used to control user-access PHP can encrypt data  </description>
     </item>
     
     <item>
       <title>Php Installation</title>
-      <link>http://github.com/libraries/php/php-installation/</link>
+      <link>https://polodev.github.io/mysite/libraries/php/php-installation/</link>
       <pubDate>Thu, 26 Jul 2018 00:04:25 +0600</pubDate>
       
-      <guid>http://github.com/libraries/php/php-installation/</guid>
+      <guid>https://polodev.github.io/mysite/libraries/php/php-installation/</guid>
       <description>What Do I Need? To start using PHP, you can:
  Find a web host with PHP and MySQL support Install a web server on your own PC, and then install PHP and MySQL  Use a Web Host With PHP Support If your server has activated support for PHP you do not need to do anything.
 Just create some .php files, place them in your web directory, and the server will automatically parse them for you.</description>
@@ -58,10 +58,10 @@ Just create some .php files, place them in your web directory, and the server wi
     
     <item>
       <title>Php Syntax</title>
-      <link>http://github.com/libraries/php/php-syntax/</link>
+      <link>https://polodev.github.io/mysite/libraries/php/php-syntax/</link>
       <pubDate>Thu, 26 Jul 2018 00:04:36 +0600</pubDate>
       
-      <guid>http://github.com/libraries/php/php-syntax/</guid>
+      <guid>https://polodev.github.io/mysite/libraries/php/php-syntax/</guid>
       <description>A PHP script starts with &amp;lt;?php and ends with ?&amp;gt;
 1 2 3 4  &amp;lt;?php // PHP code goes here ?&amp;gt;    The default file extension for PHP files is &amp;ldquo;.php&amp;rdquo;.
 A PHP file normally contains HTML tags, and some PHP scripting code.

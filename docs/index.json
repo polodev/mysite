@@ -1,153 +1,153 @@
 [
 {
-	"uri": "http://github.com/libraries/php/php-echo/",
+	"uri": "https://polodev.github.io/mysite/libraries/php/php-echo/",
 	"title": "Php Echo",
 	"tags": [],
 	"description": "",
 	"content": " In PHP there are two basic ways to get output: echo and print.\nIn this tutorial we use echo (and print) in almost every example. So, this chapter contains a little more info about those two output statements.\nPHP echo and print Statements echo and print are more or less the same. They are both used to output data to the screen.\nThe differences are small: echo has no return value while print has a return value of 1 so it can be used in expressions. echo can take multiple parameters (although such usage is rare) while print can take one argument. echo is marginally faster than print.\nThe PHP echo Statement The echo statement can be used with or without parentheses: echo or echo().\nThe following example shows how to output text with the echo command (notice that the text can contain HTML markup):\n1 2 3 4 5 6 7 8 9 10 11 12 13 14  \u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html\u0026gt; \u0026lt;body\u0026gt; \u0026lt;?php echo \u0026#34;\u0026lt;h2\u0026gt;PHP is Fun!\u0026lt;/h2\u0026gt;\u0026#34;; echo \u0026#34;Hello world!\u0026lt;br\u0026gt;\u0026#34;; echo \u0026#34;I\u0026#39;m about to learn PHP!\u0026lt;br\u0026gt;\u0026#34;; echo \u0026#34;This \u0026#34;, \u0026#34;string \u0026#34;, \u0026#34;was \u0026#34;, \u0026#34;made \u0026#34;, \u0026#34;with multiple parameters.\u0026#34;; ?\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt;    "
 },
 {
-	"uri": "http://github.com/libraries/php/php-variable/",
+	"uri": "https://polodev.github.io/mysite/libraries/php/php-variable/",
 	"title": "Php Variable",
 	"tags": [],
 	"description": "",
 	"content": "Variables are \u0026ldquo;containers\u0026rdquo; for storing information.\nCreating (Declaring) PHP Variables\nIn PHP, a variable starts with the $ sign, followed by the name of the variable:\n1 2 3 4 5 6  \u0026lt;?php $txt = \u0026#34;Hello world!\u0026#34;; $x = 5; $y = 10.5; ?\u0026gt;    "
 },
 {
-	"uri": "http://github.com/libraries/php/php-intro/",
+	"uri": "https://polodev.github.io/mysite/libraries/php/php-intro/",
 	"title": "Php Intro",
 	"tags": [],
 	"description": "",
 	"content": " What is php PHP is an acronym for \u0026ldquo;PHP: Hypertext Preprocessor\u0026rdquo;. PHP is a widely-used, open source scripting language. Its a powerful tool for making dynamic and interactive Web pages.\nWhat Can PHP Do?  PHP can generate dynamic page content PHP can create, open, read, write, delete, and close files on the server PHP can collect form data PHP can send and receive cookies PHP can add, delete, modify data in your database PHP can be used to control user-access PHP can encrypt data  "
 },
 {
-	"uri": "http://github.com/libraries/css/css-background/",
+	"uri": "https://polodev.github.io/mysite/libraries/css/css-background/",
 	"title": "Css Background",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/libraries/css/css-color/",
+	"uri": "https://polodev.github.io/mysite/libraries/css/css-color/",
 	"title": "Css Color",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/libraries/css/css-syntax/",
+	"uri": "https://polodev.github.io/mysite/libraries/css/css-syntax/",
 	"title": "Css Syntax",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/libraries/css/css-how-to/",
+	"uri": "https://polodev.github.io/mysite/libraries/css/css-how-to/",
 	"title": "Css How To",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/libraries/css/css-introduction/",
+	"uri": "https://polodev.github.io/mysite/libraries/css/css-introduction/",
 	"title": "Css Introduction",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/libraries/php/",
+	"uri": "https://polodev.github.io/mysite/libraries/php/",
 	"title": "php essential",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/libraries/php/php-installation/",
+	"uri": "https://polodev.github.io/mysite/libraries/php/php-installation/",
 	"title": "Php Installation",
 	"tags": [],
 	"description": "",
 	"content": " What Do I Need? To start using PHP, you can:\n Find a web host with PHP and MySQL support Install a web server on your own PC, and then install PHP and MySQL  Use a Web Host With PHP Support If your server has activated support for PHP you do not need to do anything.\nJust create some .php files, place them in your web directory, and the server will automatically parse them for you.\nYou do not need to compile anything or install any extra tools.\nBecause PHP is free, most web hosts offer PHP support.\nSet Up PHP on Your Own PC However, if your server does not support PHP, you must:\n install a web server install PHP install a database, such as MySQL The official PHP website (PHP.net) has installation instructions for PHP: http://php.net/manual/en/install.php\n  "
 },
 {
-	"uri": "http://github.com/libraries/css/",
+	"uri": "https://polodev.github.io/mysite/libraries/css/",
 	"title": "css essential",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/libraries/php/php-syntax/",
+	"uri": "https://polodev.github.io/mysite/libraries/php/php-syntax/",
 	"title": "Php Syntax",
 	"tags": [],
 	"description": "",
 	"content": "A PHP script starts with \u0026lt;?php and ends with ?\u0026gt;\n1 2 3 4  \u0026lt;?php // PHP code goes here ?\u0026gt;    The default file extension for PHP files is \u0026ldquo;.php\u0026rdquo;.\nA PHP file normally contains HTML tags, and some PHP scripting code.\nBelow, we have an example of a simple PHP file, with a PHP script that uses a built-in PHP function \u0026ldquo;echo\u0026rdquo; to output the text \u0026ldquo;Hello World!\u0026rdquo; on a web page:\n1 2 3 4 5 6 7 8 9 10 11 12 13  \u0026lt;!DOCTYPE html\u0026gt; \u0026lt;html\u0026gt; \u0026lt;body\u0026gt; \u0026lt;h1\u0026gt;My first PHP page\u0026lt;/h1\u0026gt; \u0026lt;?php echo \u0026#34;Hello World!\u0026#34;; ?\u0026gt; \u0026lt;/body\u0026gt; \u0026lt;/html\u0026gt;   \n"
 },
 {
-	"uri": "http://github.com/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/",
+	"uri": "https://polodev.github.io/mysite/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/",
 	"title": "How to Create Read Update Delete in Php Mysql With Pdo",
 	"tags": [],
 	"description": "",
 	"content": " Visual CRUD in PHP \nIn this video tutorial I have shown how to make a basic crud application in php. I have connected with database using php PDO(php data object). Which is database agnostic. You can connect any sql database with this procedure.\nObjective of this video  You will be able to create, read, update, delete in php You will understand php data object(PDO). PDO is database agnostic. You can connect any sql database with php. PDO is most recommended way to connect with database. You will understand basic php workflow.  blah blah blah\u0026hellip;. Don\u0026rsquo;t be scare about the basic command line. Lot of people scare about command line. Actually command line help us to get rid of laborious work a lot. in this video I have used cd for changing directory. mkdir for making directory. touch for making file. Here touch was very handy. I make 5 file in single line command. touch index.php create.php edit.php delete.php db.php. If you are windows user use git bash to perform those command.\ntuts Mysql part first login to mysql and create database and table. to create database and table following code will be necessary. sql is not case sensitive. We can use sql syntax uppercase and lower case vice versa.\n1 2 3 4 5 6 7  CREATE DATABASE company; USE company; CREATE TABLE people ( id INT(11) AUTO_INCREMENT PRIMARY KEY, name VARCHAR(30) NOT NULL, email VARCHAR(30) NOT NULL );   Database connection In db.php connect with database by instantiating PDO.\n1 2 3 4 5 6 7  \u0026lt;?php $dsn = \u0026#39;mysql:host=localhost;dbname=company\u0026#39;; $username = \u0026#39;root\u0026#39;; $password = \u0026#39;\u0026#39;; $options = []; $connection = new PDO($dsn, $username, $password, $options);    here dsn means data source name. which contain sql driver, database name and host information.\ncreate we made connection in db.php file. Whenever we need connection we have to require \u0026lsquo;db.php\u0026rsquo; page. In create page, our form action is empty so, it will submit form data to same page. Hence, we use php isset function whether form submitted or not. If $_POST['name_field'] is set in we will get value from form and insert data into database\n1 2 3 4 5 6 7  \u0026lt;?php $name = $_POST[\u0026#39;name\u0026#39;]; $email = $_POST[\u0026#39;email\u0026#39;]; $sql = \u0026#39;INSERT INTO people(name, email) VALUES(:name, :email)\u0026#39;; $statement = $connection-\u0026gt;prepare($sql); $statement-\u0026gt;execute([\u0026#39;:name\u0026#39; =\u0026gt; $name, \u0026#39;:email\u0026#39; =\u0026gt; $email]);    Here we use placeholder in sql statement. We can use $connection-\u0026gt;query() function directly. Therefore, Here we use prepare() statement. Which actually less error prone and secure.\nread 1 2 3 4 5 6  \u0026lt;?php $sql = \u0026#39;SELECT * FROM people\u0026#39;; $statement = $connection-\u0026gt;prepare($sql); $statement-\u0026gt;execute(); $people = $statement-\u0026gt;fetchAll(PDO::FETCH_OBJ);    Here we are fetching data from database using fetchAll function which take PDO::FETCH_OBJ constant. If we don\u0026rsquo;t pass any constant fetchAll function return index and associative array. Therefore, I like to access table column in object oriented way. Hence I passed that constant.\nupdate In home page (index.php) we linked edit page in action column. which actually send data to edit page using get method. We give url param id and it value\u0026rsquo;s is table id.\nIn edit.php file we can access id param using $_GET super global. Once we have id we can fetch person information from database using following code.\n1 2 3 4 5 6 7  \u0026lt;?php $id = $_GET[\u0026#39;id\u0026#39;]; $sql = \u0026#39;SELECT * FROM people WHERE id=:id\u0026#39;; $statement = $connection-\u0026gt;prepare($sql); $statement-\u0026gt;execute([\u0026#39;:id\u0026#39; =\u0026gt; $id ]); $person = $statement-\u0026gt;fetch(PDO::FETCH_OBJ);    In case of edit, existing input field value will be $person name and email. when edit form will submit we update our database record by filtering id.\n1 2 3 4 5 6 7  \u0026lt;?php $name = $_POST[\u0026#39;name\u0026#39;]; $email = $_POST[\u0026#39;email\u0026#39;]; $sql = \u0026#39;UPDATE people SET name=:name, email=:email WHERE id=:id\u0026#39;; $statement = $connection-\u0026gt;prepare($sql); $statement-\u0026gt;execute([\u0026#39;:name\u0026#39; =\u0026gt; $name, \u0026#39;:email\u0026#39; =\u0026gt; $email, \u0026#39;:id\u0026#39; =\u0026gt; $id]);    delete deleting logic also as like edit. we will accessing id using $_GET super global and we will delete database record by filtering id.\n1 2 3 4 5 6  \u0026lt;?php $id = $_GET[\u0026#39;id\u0026#39;]; $sql = \u0026#39;DELETE FROM people WHERE id=:id\u0026#39;; $statement = $connection-\u0026gt;prepare($sql); $statement-\u0026gt;execute([\u0026#39;:id\u0026#39; =\u0026gt; $id])    redirection For edit and delete success we redirect to home page using header function.\n1 2 3  \u0026lt;?php header(\u0026#39;Location: /\u0026#39;);    Thank You. Take care.\n"
 },
 {
-	"uri": "http://github.com/posts/hugo-cheatsheet/",
+	"uri": "https://polodev.github.io/mysite/posts/hugo-cheatsheet/",
 	"title": "Hugo cheatsheet",
 	"tags": [],
 	"description": "",
 	"content": " # master template in hugo In hugo master template name is baseof.html which located in layouts/_default/baseof.html .\n# block in master template 1 2 3  {{block\u0026#34;main\u0026#34;.}} default content here {{end}}   # using block in other template 1 2 3  {{ define \u0026#34;main\u0026#34; }} \u0026lt;h2\u0026gt;Different page\u0026lt;/h2\u0026gt; {{ end }}   # Adding scss in hugo make file inside assets/scss/style.scss file\nInside html file\n1 2 3  {{ $sass := resources.Get \u0026#34;scss/style.scss\u0026#34; }} {{ $style := $sass | resources.ToCSS }} \u0026lt;link rel=\u0026#34;stylesheet\u0026#34; href=\u0026#34;{{ $style.Permalink }}\u0026#34; /\u0026gt;   # Adding sourcemap and minify scss in hugo 1 2 3  {{ $sass := resources.Get \u0026#34;scss/style.scss\u0026#34; }} {{ $style := $sass | resources.ToCSS (dict \u0026#34;outputStyle\u0026#34; \u0026#34;compressed\u0026#34; \u0026#34;enableSourceMap\u0026#34; true) }} \u0026lt;link rel=\u0026#34;stylesheet\u0026#34; href=\u0026#34;{{ $style.Permalink }}\u0026#34; /\u0026gt;   # Home page path in hugo layouts/index.html\n# adding static content like html css in hugo bootstrap location static/css/bootstrap.min.css\n1 2 3  \u0026lt;link rel=\u0026#39;stylesheet\u0026#39; href=\u0026#39;{{.Site.BaseURL}}css/bootstrap.min.css\u0026#39;/\u0026gt; \u0026lt;!-- or --\u0026gt; \u0026lt;link rel=\u0026#39;stylesheet\u0026#39; href=\u0026#39;{{\u0026#34;css/bootstrap.min.css\u0026#34; | relURL}}\u0026#39;/\u0026gt;   # generating syntax highlighter for hugo 1  hugo gen chromastyles --style=monokai \u0026gt; static/css/syntax.css   Run hugo gen chromastyles -h for more\n# highlighting in hugo      # outputting rss and json - configuration setting in config.toml file 1 2  [outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;]   # custom archetype today I made archetype for library. file located in archetypes/library.md. following toml content I wrote inside 1 2 3 4 5 6 7 8 9 10  +++ title = \u0026#34;{{ replace .Name \u0026#34;-\u0026#34; \u0026#34; \u0026#34; | title }}\u0026#34; date = {{ .Date }} draft = false weight = 1 type=\u0026#39;library\u0026#39; libraries = [\u0026#34;css\u0026#34;] search_keyword = \u0026#34;css\u0026#34; layout= \u0026#34;css\u0026#34; +++  \nto use this archetype command is following 1 2 3  hugo new --kind library libraries/css/css-introduction.md or hugo new -k library libraries/css/css-introduction.md  \n# how nested layout works I have set taxonomy library in config.toml file 1 2  [taxonomies] library = \u0026#34;libraries\u0026#34;  \nfor listing all the folder inside content/libraries/ I wrote template inside layouts/library/list.html Here if we want to change title of folder name instead of folder name itself - I have to make a file content/libraries/_index.md file with front matter following\n1 2 3 4 5 6  --- title: \u0026#34;php essential\u0026#34; date: 2018-07-24T00:29:26+06:00 weight: 1 draft: false ---  \nfor listing all the file inside content/libraries/php I wrote template inside layouts/library/php.html Here layouts/library/php.html is not a common layout naming format So in your file frontmatter we have to mention our layout\n1 2 3  +++ layout= \u0026#34;php\u0026#34; +++   "
 },
 {
-	"uri": "http://github.com/posts/",
+	"uri": "https://polodev.github.io/mysite/posts/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/categories/",
+	"uri": "https://polodev.github.io/mysite/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/libraries/",
+	"uri": "https://polodev.github.io/mysite/libraries/",
 	"title": "Libraries",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/libraries/",
+	"uri": "https://polodev.github.io/mysite/libraries/",
 	"title": "Libraries",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/",
+	"uri": "https://polodev.github.io/mysite/",
 	"title": "My New Hugo Site",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/series/",
+	"uri": "https://polodev.github.io/mysite/series/",
 	"title": "Series",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/snippets/",
+	"uri": "https://polodev.github.io/mysite/snippets/",
 	"title": "Snippets",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://github.com/tags/",
+	"uri": "https://polodev.github.io/mysite/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
