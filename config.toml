@@ -2,6 +2,7 @@ baseURL = "http://github.com/"
 languageCode = "en-us"
 title = "My New Hugo Site"
 pygmentsUseClasses=true
+publishDir='docs'
 pygmentsOptions= "linenos=table, startinline=true"
 pygmentsCodefencesGuessSyntax=true
 [outputs]
