@@ -2,7 +2,10 @@
 title = "{{ replace .Name "-" " " | title }}"
 date = {{ .Date }}
 draft = false
-type = 'posts'
+weight = 1
+type='series'
+series = ["css"]
+search_keyword = "css"
+layout= "css"
 +++
-
 

@@ -4,6 +4,13 @@ title = "My New Hugo Site"
 pygmentsUseClasses=true
 pygmentsOptions= "linenos=table, startinline=true"
 pygmentsCodefencesGuessSyntax=true
-
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
 [permalinks]
   post = ":title/"
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+  library = "libraries"
+  snippet = "snippets"

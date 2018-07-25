@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sourceRoot": "/Users/polodev/Desktop/project/mysite",
+	"sources": [
+		"stdin"
+	],
+	"sourcesContent": [
+		"// @import 'partials/test.scss';\n// body {\n// \tbackground-color: #eee;\n// \tcolor: #333;\n// }\ntable.lntable {\n\tposition: relative;\n}\n.copy-button {\n\tposition: absolute;\n\ttop: 0px;\n\tright: 0px;\n\tdisplay: inline-block;\n\tcolor: maroon;\n\tborder: 1px solid maroon;\n\tcursor: pointer;\n\t&:hover {\n\t\tbackground-color: maroon;\n\t\tcolor: white;\n\t}\n}\n\n.highlight pre {\n\tfont-size: 100%;\n}"
+	],
+	"names": [],
+	"mappings": "AAKA,AAAA,KAAK,AAAA,QAAQ,AAAC,CACb,QAAQ,CAAE,QAAQ,CAClB,AACD,AAAA,YAAY,AAAC,CACZ,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,GAAG,CACR,KAAK,CAAE,GAAG,CACV,OAAO,CAAE,YAAY,CACrB,KAAK,CAAE,MAAM,CACb,MAAM,CAAE,gBAAgB,CACxB,MAAM,CAAE,OAAO,CAKf,AAZD,AAQC,YARW,AAQV,MAAM,AAAC,CACP,gBAAgB,CAAE,MAAM,CACxB,KAAK,CAAE,KAAK,CACZ,AAGF,AAAA,UAAU,CAAC,GAAG,AAAC,CACd,SAAS,CAAE,IAAI,CACf"
+}

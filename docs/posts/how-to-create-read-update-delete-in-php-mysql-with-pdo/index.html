@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Polo Dev</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel='stylesheet' href='http://github.com/css/bootstrap.min.css'/>
+  
+  <link rel='stylesheet' href='http://github.com/css/syntax.css'/>
+
+
+  
+  
+  <link rel="stylesheet" href="http://github.com/scss/style.css" />
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="http://github.com/">Polo Dev</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://github.com/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://github.com/posts">Posts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://github.com/libraries">Library</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/series">Series</a>
+      </li>
+    </ul>
+    <div class="m-2">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </div>
+  </div>
+</nav>
+
+<div class='container'>
+  
+<h1>this is default single page</h1>
+	
+
+<h1 id="visual-crud-in-php">Visual CRUD in PHP</h1>
+
+<p><a href="http://www.youtube.com/watch?feature=player_embedded&v=MYhw4-Bc-oM
+" target="_blank"><img src="https://raw.githubusercontent.com/polodev/youtube-php-crud/master/thumbnail.png" 
+alt="create read update delete - CRUD in php and mysql using Php Data Object - pdo" width="540" border="10" /></a></p>
+
+<p>In this video tutorial I have shown how to make a basic crud application in php. I have connected with database using php PDO(php data object). Which is database agnostic. You can connect any sql database with this procedure.</p>
+
+<h3 id="objective-of-this-video">Objective of this video</h3>
+
+<ul>
+<li>You will be able to create, read, update, delete in php</li>
+<li>You will understand php data object(PDO). PDO is database agnostic. You can connect any sql database with php. PDO is most recommended way to connect with database.</li>
+<li>You will understand basic php workflow.</li>
+</ul>
+
+<h3 id="blah-blah-blah">blah blah blah&hellip;.</h3>
+
+<p>Don&rsquo;t be scare about the basic command line. Lot of people scare about command line. Actually command line help us to get rid of laborious work a lot. in this video I have used <code>cd</code>  for changing directory. <code>mkdir</code> for making directory. <code>touch</code> for making file. Here <code>touch</code> was very handy. I make 5 file in single line command. <code>touch index.php create.php edit.php delete.php db.php</code>. If you are windows user use <a href="https://git-scm.com/">git bash</a> to perform those command.</p>
+
+<h2 id="tuts">tuts</h2>
+
+<h3 id="mysql-part">Mysql part</h3>
+
+<p>first login to mysql and create database and table. to create database and table following code will be necessary. <code>sql</code> is not case sensitive. We can use sql syntax uppercase and lower case vice versa.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">company</span><span class="p">;</span>
+<span class="n">USE</span> <span class="n">company</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">people</span> <span class="p">(</span>
+  <span class="n">id</span>  <span class="nb">INT</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="n">AUTO_INCREMENT</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+  <span class="n">name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="n">email</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span>
+<span class="p">);</span></code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="database-connection">Database connection</h3>
+
+<p>In <code>db.php</code> connect with database by instantiating <code>PDO</code>.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nv">$dsn</span> <span class="o">=</span> <span class="s1">&#39;mysql:host=localhost;dbname=company&#39;</span><span class="p">;</span>
+<span class="nv">$username</span> <span class="o">=</span> <span class="s1">&#39;root&#39;</span><span class="p">;</span>
+<span class="nv">$password</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="nv">$options</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nv">$connection</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PDO</span><span class="p">(</span><span class="nv">$dsn</span><span class="p">,</span> <span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">,</span> <span class="nv">$options</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>here dsn means data source name. which contain sql driver, database name and host information.</p>
+
+<h3 id="create">create</h3>
+
+<p>we made connection in <code>db.php</code> file. Whenever we need connection we have to require &lsquo;db.php&rsquo; page. In create page, our form action is empty so, it will submit form data to same page. Hence, we use php <code>isset</code> function whether form submitted or not. If <code>$_POST['name_field']</code> is set in  we will get value from form and insert data into database</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+  <span class="nv">$name</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">];</span>
+  <span class="nv">$email</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">];</span>
+  <span class="nv">$sql</span> <span class="o">=</span> <span class="s1">&#39;INSERT INTO people(name, email) VALUES(:name, :email)&#39;</span><span class="p">;</span>
+  <span class="nv">$statement</span> <span class="o">=</span> <span class="nv">$connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+  <span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">([</span><span class="s1">&#39;:name&#39;</span> <span class="o">=&gt;</span> <span class="nv">$name</span><span class="p">,</span> <span class="s1">&#39;:email&#39;</span> <span class="o">=&gt;</span> <span class="nv">$email</span><span class="p">]);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Here we use placeholder in sql statement. We can use <code>$connection-&gt;query()</code> function directly. Therefore, Here we use <code>prepare()</code> statement. Which actually less error prone and secure.</p>
+
+<h3 id="read">read</h3>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s1">&#39;SELECT * FROM people&#39;</span><span class="p">;</span>
+<span class="nv">$statement</span> <span class="o">=</span> <span class="nv">$connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+<span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+<span class="nv">$people</span> <span class="o">=</span> <span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">fetchAll</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_OBJ</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Here we are fetching data from database using fetchAll function which take <code>PDO::FETCH_OBJ</code> constant. If we don&rsquo;t pass any constant <code>fetchAll</code> function return index and associative array. Therefore, I like to access table column in object oriented way. Hence I passed that constant.</p>
+
+<h3 id="update">update</h3>
+
+<p>In home page (<code>index.php</code>) we linked edit page in action column. which actually send data to edit page using get method. We give url param <code>id</code> and it value&rsquo;s is table id.<br />
+In  <code>edit.php</code> file we can access id param using <code>$_GET</code> super global. Once we have id we can fetch person information from database using following code.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">];</span>
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s1">&#39;SELECT * FROM people WHERE id=:id&#39;</span><span class="p">;</span>
+<span class="nv">$statement</span> <span class="o">=</span> <span class="nv">$connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+<span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">([</span><span class="s1">&#39;:id&#39;</span> <span class="o">=&gt;</span> <span class="nv">$id</span> <span class="p">]);</span>
+<span class="nv">$person</span> <span class="o">=</span> <span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_OBJ</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>In case of edit, existing input field value will be <code>$person</code> name and email. when edit form will submit we update our database record by filtering id.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nv">$name</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">];</span>
+<span class="nv">$email</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">];</span>
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s1">&#39;UPDATE people SET name=:name, email=:email WHERE id=:id&#39;</span><span class="p">;</span>
+<span class="nv">$statement</span> <span class="o">=</span> <span class="nv">$connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+<span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">([</span><span class="s1">&#39;:name&#39;</span> <span class="o">=&gt;</span> <span class="nv">$name</span><span class="p">,</span> <span class="s1">&#39;:email&#39;</span> <span class="o">=&gt;</span> <span class="nv">$email</span><span class="p">,</span> <span class="s1">&#39;:id&#39;</span> <span class="o">=&gt;</span> <span class="nv">$id</span><span class="p">]);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="delete">delete</h3>
+
+<p>deleting logic also as like edit. we will accessing id using <code>$_GET</code> super global and we will delete database record by filtering id.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nv">$id</span> <span class="o">=</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">];</span>
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s1">&#39;DELETE FROM people WHERE id=:id&#39;</span><span class="p">;</span>
+<span class="nv">$statement</span> <span class="o">=</span> <span class="nv">$connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+<span class="nv">$statement</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">([</span><span class="s1">&#39;:id&#39;</span> <span class="o">=&gt;</span> <span class="nv">$id</span><span class="p">])</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<h3 id="redirection">redirection</h3>
+
+<p>For edit and delete success we redirect to home page using <code>header</code> function.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span> 
+<span class="nx">header</span><span class="p">(</span><span class="s1">&#39;Location: /&#39;</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Thank You. Take care.</p>
+
+
+</div>
+
+  
+  <script src='http://github.com//js/jquery.min.js'></script>
+  <script src='http://github.com//js/popper.min.js'></script>
+  <script src="http://github.com//js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+
+<script>
+
+var tables = document.querySelectorAll('table.lntable');
+tables.forEach(function (table) {
+  var tds = table.querySelectorAll('td');
+  if (tds.length > 1) {
+    var codeTd = tds[1];
+    var pre = codeTd.querySelector('pre');
+    var button = document.createElement('button');
+    button.className = 'copy-button';
+    button.textContent = 'Copy';
+    pre.appendChild(button);
+  }
+
+})
+
+var copyCode = new ClipboardJS('.copy-button', {
+    target: function(trigger) {
+        return trigger.previousElementSibling;
+    }
+});
+copyCode.on('success', function(event) {
+    event.clearSelection();
+    event.trigger.textContent = 'Copied';
+    window.setTimeout(function() {
+        event.trigger.textContent = 'Copy';
+    }, 2000);
+});
+copyCode.on('error', function(event) { 
+    event.trigger.textContent = 'Press "Ctrl + C" to copy';
+    window.setTimeout(function() {
+        event.trigger.textContent = 'Copy';
+    }, 2000);
+});
+
+
+
+
+
+</script>
+
+</body>
+</html>

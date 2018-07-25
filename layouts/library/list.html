@@ -1,0 +1,11 @@
+{{ define "main" }}
+this is different list page which located under /layouts/libraries/list.html
+
+{{ range .Pages }}
+  <li>
+      <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+  </li>
+{{ end }}
+
+
+{{ end }}

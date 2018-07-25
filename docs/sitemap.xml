@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://github.com/libraries/php/php-echo/</loc>
+    <lastmod>2018-07-26T00:04:47+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/php/php-variable/</loc>
+    <lastmod>2018-07-26T00:04:42+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/php/php-intro/</loc>
+    <lastmod>2018-07-26T00:04:11+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/css/css-background/</loc>
+    <lastmod>2018-07-26T00:03:33+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/css/css-color/</loc>
+    <lastmod>2018-07-26T00:03:28+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/css/css-syntax/</loc>
+    <lastmod>2018-07-26T00:03:15+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/css/css-how-to/</loc>
+    <lastmod>2018-07-26T00:03:05+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/css/css-introduction/</loc>
+    <lastmod>2018-07-26T00:02:19+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/php/</loc>
+    <lastmod>2018-07-24T00:29:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/php/php-installation/</loc>
+    <lastmod>2018-07-26T00:04:25+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/css/</loc>
+    <lastmod>2018-07-26T00:03:33+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/php/php-syntax/</loc>
+    <lastmod>2018-07-26T00:04:36+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/</loc>
+    <lastmod>2018-07-24T00:29:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/posts/hugo-cheatsheet/</loc>
+    <lastmod>2018-07-23T00:29:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/posts/</loc>
+    <lastmod>2018-07-24T00:29:26+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://github.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/</loc>
+    <lastmod>2018-07-26T00:04:47+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://github.com/libraries/</loc>
+    <lastmod>2018-07-24T00:29:26+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://github.com/</loc>
+    <lastmod>2018-07-26T00:04:47+06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://github.com/series/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://github.com/snippets/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://github.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

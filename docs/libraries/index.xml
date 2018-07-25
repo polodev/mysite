@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Libraries on My New Hugo Site</title>
+    <link>http://github.com/libraries/</link>
+    <description>Recent content in Libraries on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Jul 2018 00:04:47 +0600</lastBuildDate>
+    
+	<atom:link href="http://github.com/libraries/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Php Echo</title>
+      <link>http://github.com/libraries/php/php-echo/</link>
+      <pubDate>Thu, 26 Jul 2018 00:04:47 +0600</pubDate>
+      
+      <guid>http://github.com/libraries/php/php-echo/</guid>
+      <description>In PHP there are two basic ways to get output: echo and print.
+In this tutorial we use echo (and print) in almost every example. So, this chapter contains a little more info about those two output statements.
+PHP echo and print Statements echo and print are more or less the same. They are both used to output data to the screen.
+The differences are small: echo has no return value while print has a return value of 1 so it can be used in expressions.</description>
+    </item>
+    
+    <item>
+      <title>Php Variable</title>
+      <link>http://github.com/libraries/php/php-variable/</link>
+      <pubDate>Thu, 26 Jul 2018 00:04:42 +0600</pubDate>
+      
+      <guid>http://github.com/libraries/php/php-variable/</guid>
+      <description>Variables are &amp;ldquo;containers&amp;rdquo; for storing information.
+Creating (Declaring) PHP Variables
+In PHP, a variable starts with the $ sign, followed by the name of the variable:
+1 2 3 4 5 6  &amp;lt;?php $txt = &amp;#34;Hello world!&amp;#34;; $x = 5; $y = 10.5; ?&amp;gt;    </description>
+    </item>
+    
+    <item>
+      <title>Php Intro</title>
+      <link>http://github.com/libraries/php/php-intro/</link>
+      <pubDate>Thu, 26 Jul 2018 00:04:11 +0600</pubDate>
+      
+      <guid>http://github.com/libraries/php/php-intro/</guid>
+      <description> What is php PHP is an acronym for &amp;ldquo;PHP: Hypertext Preprocessor&amp;rdquo;. PHP is a widely-used, open source scripting language. Its a powerful tool for making dynamic and interactive Web pages.
+What Can PHP Do?  PHP can generate dynamic page content PHP can create, open, read, write, delete, and close files on the server PHP can collect form data PHP can send and receive cookies PHP can add, delete, modify data in your database PHP can be used to control user-access PHP can encrypt data  </description>
+    </item>
+    
+    <item>
+      <title>Css Background</title>
+      <link>http://github.com/libraries/css/css-background/</link>
+      <pubDate>Thu, 26 Jul 2018 00:03:33 +0600</pubDate>
+      
+      <guid>http://github.com/libraries/css/css-background/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css Color</title>
+      <link>http://github.com/libraries/css/css-color/</link>
+      <pubDate>Thu, 26 Jul 2018 00:03:28 +0600</pubDate>
+      
+      <guid>http://github.com/libraries/css/css-color/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css Syntax</title>
+      <link>http://github.com/libraries/css/css-syntax/</link>
+      <pubDate>Thu, 26 Jul 2018 00:03:15 +0600</pubDate>
+      
+      <guid>http://github.com/libraries/css/css-syntax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css How To</title>
+      <link>http://github.com/libraries/css/css-how-to/</link>
+      <pubDate>Thu, 26 Jul 2018 00:03:05 +0600</pubDate>
+      
+      <guid>http://github.com/libraries/css/css-how-to/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css Introduction</title>
+      <link>http://github.com/libraries/css/css-introduction/</link>
+      <pubDate>Thu, 26 Jul 2018 00:02:19 +0600</pubDate>
+      
+      <guid>http://github.com/libraries/css/css-introduction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Php Installation</title>
+      <link>http://github.com/libraries/php/php-installation/</link>
+      <pubDate>Thu, 26 Jul 2018 00:04:25 +0600</pubDate>
+      
+      <guid>http://github.com/libraries/php/php-installation/</guid>
+      <description>What Do I Need? To start using PHP, you can:
+ Find a web host with PHP and MySQL support Install a web server on your own PC, and then install PHP and MySQL  Use a Web Host With PHP Support If your server has activated support for PHP you do not need to do anything.
+Just create some .php files, place them in your web directory, and the server will automatically parse them for you.</description>
+    </item>
+    
+    <item>
+      <title>Php Syntax</title>
+      <link>http://github.com/libraries/php/php-syntax/</link>
+      <pubDate>Thu, 26 Jul 2018 00:04:36 +0600</pubDate>
+      
+      <guid>http://github.com/libraries/php/php-syntax/</guid>
+      <description>A PHP script starts with &amp;lt;?php and ends with ?&amp;gt;
+1 2 3 4  &amp;lt;?php // PHP code goes here ?&amp;gt;    The default file extension for PHP files is &amp;ldquo;.php&amp;rdquo;.
+A PHP file normally contains HTML tags, and some PHP scripting code.
+Below, we have an example of a simple PHP file, with a PHP script that uses a built-in PHP function &amp;ldquo;echo&amp;rdquo; to output the text &amp;ldquo;Hello World!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Polo Dev</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel='stylesheet' href='http://github.com/css/bootstrap.min.css'/>
+  
+  <link rel='stylesheet' href='http://github.com/css/syntax.css'/>
+
+
+  
+  
+  <link rel="stylesheet" href="http://github.com/scss/style.css" />
+
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="http://github.com/">Polo Dev</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="http://github.com/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://github.com/posts">Posts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://github.com/libraries">Library</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/series">Series</a>
+      </li>
+    </ul>
+    <div class="m-2">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </div>
+  </div>
+</nav>
+
+<div class='container'>
+  
+
+
+  <li>
+      <a href="http://github.com/posts/how-to-create-read-update-delete-in-php-mysql-with-pdo/">2018-07-24 | How to Create Read Update Delete in Php Mysql With Pdo</a>
+  </li>
+
+  <li>
+      <a href="http://github.com/posts/hugo-cheatsheet/">2018-07-23 | Hugo cheatsheet</a>
+  </li>
+
+
+
+
+</div>
+
+  
+  <script src='http://github.com//js/jquery.min.js'></script>
+  <script src='http://github.com//js/popper.min.js'></script>
+  <script src="http://github.com//js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+
+<script>
+
+var tables = document.querySelectorAll('table.lntable');
+tables.forEach(function (table) {
+  var tds = table.querySelectorAll('td');
+  if (tds.length > 1) {
+    var codeTd = tds[1];
+    var pre = codeTd.querySelector('pre');
+    var button = document.createElement('button');
+    button.className = 'copy-button';
+    button.textContent = 'Copy';
+    pre.appendChild(button);
+  }
+
+})
+
+var copyCode = new ClipboardJS('.copy-button', {
+    target: function(trigger) {
+        return trigger.previousElementSibling;
+    }
+});
+copyCode.on('success', function(event) {
+    event.clearSelection();
+    event.trigger.textContent = 'Copied';
+    window.setTimeout(function() {
+        event.trigger.textContent = 'Copy';
+    }, 2000);
+});
+copyCode.on('error', function(event) { 
+    event.trigger.textContent = 'Press "Ctrl + C" to copy';
+    window.setTimeout(function() {
+        event.trigger.textContent = 'Copy';
+    }, 2000);
+});
+
+
+
+
+
+</script>
+
+</body>
+</html>
